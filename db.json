@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "id": 100,
+      "order": 1,
+      "title": "Item 1",
+      "color": "pico-background-blue-400"
+    },
+    {
+      "id": 101,
+      "order": 2,
+      "title": "Item 2",
+      "color": "pico-background-azure-400"
+    },
+    {
+      "id": 103,
+      "order": 3,
+      "title": "Item 3",
+      "color": "pico-background-cyan-100"
+    },
+    {
+      "id": 110,
+      "order": 4,
+      "title": "Item 4",
+      "color": "pico-background-lime-200"
+    },
+    {
+      "id": 120,
+      "order": 5,
+      "title": "Item 5",
+      "color": "pico-background-yellow-100"
+    }
+  ]
+}
