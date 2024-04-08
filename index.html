@@ -8,20 +8,20 @@
   <link rel="shortcut icon" href="https://alpinejs.dev/favicon.png">
   <title>Sortable</title>
 
-  <!--  -->
+  <!-- PicoCSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css"/>
 
-  <!--  -->
+  <!-- Alpine.js -->
   <script src="//unpkg.com/alpinejs" defer></script>
 
-  <!--  -->
+  <!-- Axios -->
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-  <!--  -->
+  <!-- Sortable -->
   <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
 
-  <script src=""></script>
+  <script src="main.js"></script>
 </head>
 
 <body>
@@ -37,9 +37,13 @@
           <th>Title</th>
         </tr>
       </thead>
-      <tbody>
-        <tr>
-        </tr>
+      <tbody id="sortable-list">
+        <template x-for="(item, index) in sortedItems" :key="index">
+          <tr class="sortable-item" :data-id="item.id">
+            <td x-text="index" :class="item.color"></td>
+            <td x-text="item.id" :class="item.color"></td>
+            <td x-text="item.title" :class="item.color"></td>
+          </tr>
         </template>
       </tbody>
     </table>
